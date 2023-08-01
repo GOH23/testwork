@@ -1,0 +1,583 @@
+* {
+    font-family: 'Inter', sans-serif;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+header,.container_footer {
+    background: #1A1A25;
+    display: flex;
+    color: #FFF;
+    justify-content: center;
+    flex-flow: column;
+}
+.container_footer{
+    height: 100px;
+}
+.main_box{
+    min-height: 100vh;
+}
+.container_footer P{
+    color: white;
+    font-weight: bold;
+    font-size: 20px;
+    text-align: center;
+}
+.loadingContainer {
+    min-height: 100vh;
+    background-color: #384255;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.loadingContainer p {
+    margin-top: 10px;
+    color: white;
+    font-weight: bold;
+}
+
+.wrapper {
+    display: flex;
+    justify-content: center;
+}
+
+.catalog_box {
+    display: flex;
+    justify-content: center;
+    width: 1200px;
+    flex-flow: row wrap;
+}
+
+.carousel_card{
+    padding: 5px;
+    margin: 10px;
+    background-color: #e0e0e0;
+    text-align: center;
+    height: auto;
+}
+.dekstop_title{
+    text-align: center;
+    font-size: 20px;
+    font-weight: bold;
+}
+.product_card,.carousel_card {
+    flex: 1 0 25%;
+    padding: 5px;
+    margin: 10px;
+    background-color: #e0e0e0;
+    text-align: center;
+    height: auto;
+}
+
+.cardTitle {
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 800;
+}
+
+.checkButton {
+    background-color: green;
+    border: solid 2px greenyellow;
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    border-radius: 10px;
+    text-align: center;
+    transition: ease-in-out 200ms;
+}
+
+.checkButton:hover,.create_box:hover {
+    transform: scale(1.05);
+
+}
+
+.checkA {
+    color: white;
+    text-decoration: none;
+}
+
+.cardDescription {
+    padding: 30px;
+    border-radius: 10px;
+
+    background: #FFF;
+    text-align: left;
+}
+.carousel_card{
+    height: 100%;
+}
+.product_card img,.carousel_card img {
+    border-radius: 10px;
+    padding: 10px;
+    margin-bottom: 10px;
+    background-color: #e0e0e0;
+    max-width: 200px;
+    height: 200px;
+}
+
+.header_box1,
+.header_box2 {
+    height: 103px;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    flex-flow: row wrap;
+}
+
+.header_box1 {
+    height: 80px;
+}
+
+.header_logo {
+    margin-right: 10px;
+}
+
+.text_dillers {}
+
+.phone_number {
+    margin-right: 10px;
+    font-style: normal;
+    font-weight: 500;
+}
+
+.login_button a,
+.phone_button {
+    border-radius: 6px;
+    color: #ffffff;
+    text-decoration: none;
+    background: #384255;
+    padding: 10px;
+    margin-left: 10px;
+    margin-right: 5px;
+    transition: ease-in-out 250ms;
+}
+
+
+.menu_btn {
+    padding: 12px 14px 13px 14px;
+    color: #FFF;
+    text-decoration: none;
+    border-radius: 4px;
+    border: solid 1px rgba(0, 0, 0, 0);
+    transition: ease-in-out 250ms;
+    margin-right: 4px;
+}
+
+.header_brand_logo {
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.menu_btn:hover {
+    border: solid 1px black;
+    background: #4c5970;
+}
+
+.login_button a:hover,
+.phone_button:hover {
+    cursor: pointer;
+    background: #4c5970;
+
+}
+
+.AuthContainer {
+    display: flex;
+    justify-content: center;
+    min-height: 100vh;
+    align-items: center;
+}
+
+.authForm {
+    width: 350px;
+    border-radius: 20px;
+    border: solid 3px #e0e0e0;
+    height: 400px;
+    background-color: #1A1A25;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: column nowrap;
+    margin: 20px
+}
+
+.authForm img {
+    margin-bottom: 20px;
+}
+
+.save_btn {
+    border: 0;
+    font-weight: bold;
+    background-color: rgb(55, 145, 55);
+    border-radius: 20px;
+    padding: 12px;
+    cursor: pointer;
+    font-size: 25px;
+    transition: ease-in-out 400ms;
+}
+
+.save_btn:hover {
+    background-color: rgb(113, 201, 113);
+}
+
+.authForm input,
+.change_desc input {
+    padding: 10px;
+    border-radius: 10px;
+    font-size: 20px;
+    margin-bottom: 10px;
+    border: solid 5px #4c5970;
+    font-weight: bold;
+}
+
+.textareaChange {
+    min-height: 200px;
+    min-width: 100%;
+    max-width: 100%;
+    font-size: 20px;
+}
+
+.iconChangeImage {
+    cursor: pointer;
+    width: 100px;
+    height: 100px;
+}
+
+.fakeFileInput {
+    cursor: pointer;
+    opacity: 0;
+    width: 100px;
+    height: 100px;
+    position: absolute;
+}
+
+.change_image_box {
+    position: absolute;
+    display: flex;
+    top: 0;
+    font-size: 50px;
+    color: white;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    justify-content: center;
+}
+
+.authForm button {
+    cursor: pointer;
+    font-size: 20px;
+    color: #FFF;
+    font-weight: bold;
+    background-color: #4c5970;
+    border-radius: 10px;
+    border: 0;
+    padding: 10px;
+    margin-bottom: 10px;
+    transition: ease-in-out 300ms;
+}
+
+.authForm button:hover {
+    background-color: #6a7a97;
+}
+
+
+.sm_menu_btn,
+.sm_menu_item {
+    display: none;
+}
+
+.tool_box {
+    position: absolute;
+    top: 0;
+    z-index: 99999;
+    display: flex;
+    margin: 10px;
+    right: 0;
+    font-size: 40px;
+}
+
+.favorite_box {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 99999;
+    margin: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 40px;
+    width: 50px;
+    height: 50px;
+    color: white;
+    border-radius: 10px;
+    background-color: #6a7a97a4;
+    transition: ease-in-out 400ms;
+    cursor: pointer;
+}
+
+.favorite_box:hover {
+    color: goldenrod;
+    background-color: #6a7a97;
+}
+
+.change_box,
+.delete_box {
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50px;
+    height: 50px;
+    margin-right: 5px;
+    color: white;
+    border-radius: 10px;
+    transition: ease-in-out 400ms;
+}
+
+.delete_box {
+    background-color: rgba(255, 78, 78, 0.7);
+}
+
+.delete_box:hover {
+    background-color: rgb(255, 78, 78);
+}
+
+.change_box:hover {
+    background-color: rgb(76, 124, 214);
+}
+
+.change_box {
+    background-color: #6a91dab9;
+}
+
+.WrapperProductBox {
+    display: flex;
+    justify-content: center;
+    margin: 10px;
+}
+
+.product_desc,
+.change_desc {
+    background-color: #4c5970;
+    color: white;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    font-size: 25px;
+    padding: 10px;
+}
+
+.change_desc {
+    display: flex;
+    flex-flow: column nowrap;
+}
+
+.product_desc p {
+    margin-bottom: 10px;
+}
+
+.ProductBox {
+    position: relative;
+    border-radius: 10px;
+    width: 600px;
+}
+
+.product_img_container {
+    position: relative;
+    background-color: #e0e0e0;
+    width: 100%;
+    text-align: center;
+}
+
+.ProductBox img {
+    height: 500px;
+    max-width: 100%;
+}
+
+.create_box {
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    font-size: 50px;
+    cursor: pointer;
+    margin: 10px;
+    width: 50px;
+    height: 50px;
+    border-radius: 10px;
+    color: white;
+    background-color: rgb(134, 199, 37);
+}
+
+.create_box:hover {
+    transition: ease-in-out 400ms;
+}
+
+.modal_back {
+    top: 0;
+    position: fixed;
+    height: 100%;
+    overflow: hidden;
+    width: 100%;
+    z-index: 9999999;
+    background-color: #6a7a979a;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.modal_cont {
+    position: relative;
+    font-size: 24px;
+    font-weight: bold;
+    text-align: center;
+    width: 80%;
+    background-color: #e0e0e0;
+}
+.close_icon_button{
+    position: absolute;
+    font-size: 40px;
+    top: -40px;
+    cursor: pointer;
+    transition: ease-in-out 400ms;
+    right: -40px;
+}
+.close_icon_button:hover{
+    color: #e0e0e0;
+
+}
+.modal_header{ 
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.modal_cont{
+    border-radius: 10px;
+    padding: 20px;
+}
+.modal_desc {
+    text-align: left;
+    font-weight: normal;
+    font-size: 22px;
+}
+.modal_desc button{
+    border: 0;
+    border: 2px solid #384255;
+    font-size: 20px;
+    font-weight: bold;
+    color: white;
+    background-color: rgb(75, 75, 235); 
+    margin: 10px;
+    padding: 20px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: ease-in-out 400ms;
+}
+.modal_desc button:hover{
+    background-color: rgb(89, 89, 240);
+}
+.modal_desc input{
+    padding: 10px;
+    border-radius: 10px;
+    width: 100%;
+    margin: 5px;
+    font-size: 20px;
+    border: 0;
+}
+@media (max-width: 650px) {
+
+    .text_dillers,
+    .phone_button,
+    .phone_number,
+    .header_box2,
+    .order_phone,
+    .login_button {
+        display: none;
+    }
+
+    .product_card {
+        flex: 1 0 100%;
+
+    }
+
+    .authForm {
+        width: 100%;
+        margin: 5px;
+    }
+
+    .sm_menu_item {
+        display: block;
+        opacity: 0;
+        background-color: #4c5970;
+        border-radius: 10px;
+        padding: 10px;
+        margin-bottom: 10px;
+        width: 100%;
+    }
+
+    .sm_menu_item a {
+        display: block;
+        width: 100%;
+        text-decoration: none;
+        color: #FFF;
+    }
+
+    .sm_menu_box {
+        max-height: 150px;
+
+        display: block;
+        margin: 10px;
+        font-size: 15px;
+        width: 100%;
+        text-align: center;
+        height: fit-content;
+    }
+
+
+
+    .header_box1 {
+        align-items: start;
+    }
+
+    .sm_menu_btn {
+        display: block;
+
+        padding: 10px 15px 5px 15px;
+        border-radius: 10px;
+        margin-left: 10px;
+        color: #FFF;
+        background: #384255;
+        border: 0;
+        transition: ease-in-out 400ms;
+        font-size: 35px;
+        cursor: pointer;
+    }
+
+    .sm_menu_btn:hover {
+        transform: scale(1.05);
+
+    }
+}
+
+@media (max-width: 450px) {
+    .header_logo {
+        width: 250px;
+    }
+}
+
+@media (max-width: 1100px) {
+
+    .text_dillers,
+    .phone_button {
+        display: none;
+    }
+}
+
+@media (max-width: 810px) {
+
+    .phone_number,
+    .order_phone {
+        display: none;
+    }
+}
